@@ -14,5 +14,24 @@ public class PracticeMethodMain {
 
         System.out.println(r3);
         System.out.println(r4);
+
+        String grade = pm.getGrade(100);
+        System.out.println(grade);
+
+        pm.getGrade2(90);
+
+        pm.printStar(5);
+        pm.printStar(3);
+        System.out.println("-------");
+        pm.printStarTriangle(4);
+        System.out.println("-------");
+        pm.printStarRectengle(4);
+
+//        pm.gugudan(5);
+//        pm.gugudan(3,6);
+
+        int sum = pm.sum(10, 50);
+        System.out.println(sum);
     }
+
 }
