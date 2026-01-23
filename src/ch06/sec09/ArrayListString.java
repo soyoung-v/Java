@@ -1,5 +1,7 @@
 package ch06.sec09;
 
+import java.util.Arrays;
+
 public class ArrayListString {
     public String[] arr;
 
@@ -7,6 +9,27 @@ public class ArrayListString {
         arr = new String[0];
     }
 
+    @Override
+    public String toString(){
+//        String list = "[]";
+//        String list1 = "[";
+//        for(int i=0; i< arr.length; i++){
+//            if(i== arr.length-1) {
+//                list1 += arr[i];
+//                list1 += "]" ;
+//                return list1;}
+//            else{ list1 += arr[i];
+//            list1 += "," ;}
+//        }
+//        return list;
+        String temp = "";
+        for(int i=0; i< arr.length; i++){
+            if(i== arr.length-1) {
+                temp += arr[i];}
+            else{ temp = temp+ arr[i] + ",";}
+        }
+        return "[" + temp + "]";
+    }
     public void add(String ha) {
         String[] arr1 = new String[arr.length + 1];
         for (int i = 0; i < arr.length; i++) {
